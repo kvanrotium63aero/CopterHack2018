@@ -113,7 +113,7 @@ while True:
 				navigate(x=0, y=0, z=1.5, yaw=float('nan'), speed=0.5, frame_id='aruco_map', update_frame=True, auto_arm=False)
 				vk.method("messages.send", {"peer_id": id, "message": "Home"})
 			else:
-				print('error')
+				print('unknown command \n if you need a list of command, write "help"')
 				vk.method("messages.send", {"peer_id": id, "message": "unknown command"})
 	except Exception as E:
 		time.sleep(1)

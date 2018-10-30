@@ -50,7 +50,7 @@ while True:
 				vk.method("messages.send", {"peer_id": id, "message": "Telemetry x: " + x1 + " Telemetry y: " + y1})
 			elif body.lower() == "help":
 				print('help')
-				vk.method("messages.send", {"peer_id": id, "message": "Commands: \n 1) takeoff \n 2) land \n 3) forwar' \n 4) back \n 5) right \n 6) left \n 7) home "})
+				vk.method("messages.send", {"peer_id": id, "message": "Commands: \n 1) takeoff \n 2) land \n 3) forward \n 4) back \n 5) right \n 6) left \n 7) home "})
 			elif body.lower() == "forward":
 				print('forward')
 				telemetry = get_telemetry(frame_id='aruco_map')

@@ -17,7 +17,7 @@ get_telemetry = rospy.ServiceProxy('/get_telemetry', srv.GetTelemetry)
 arming = rospy.ServiceProxy('/mavros/cmd/arming', CommandBool)
 get_telemetry = rospy.ServiceProxy('get_telemetry', srv.GetTelemetry)
 
-vk = vk_api.VkApi(token="add your token here")
+vk = vk_api.VkApi(token="no token for safety")
 vk._auth_token()
 
 def mode_to(mode):

@@ -1,9 +1,6 @@
 import vk_api
 import time
 import rospy
-from clever import srv
-
-import rospy
 import math
 from clever import srv
 from mavros_msgs.srv import CommandBool
